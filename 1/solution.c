@@ -22,7 +22,7 @@ void solution1()
 
 int divisible_by(int n)
 {
-  int p = 999 / n;
+	int p = 999 / n;
 	return n * (p * (p + 1)) / 2;
 }
 
