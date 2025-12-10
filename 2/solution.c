@@ -13,16 +13,17 @@
 void solution1()
 {
 	unsigned int sum = 0;
-  unsigned int a = 0;
-  unsigned int b = 1;
-  unsigned int c = 0;
+	unsigned int a = 0;
+	unsigned int b = 1;
+	unsigned int c = 0;
 
-  while (c < 4000000) {
-      c = a + b;
-      a = b;
-      b = c;
-      if (c % 2 == 0) sum += c;
-  }
+	while (c < 4000000) {
+		c = a + b;
+		a = b;
+		b = c;
+		if (c % 2 == 0)
+			sum += c;
+	}
 
 	printf("Solution 1: %d\n", sum);
 }
@@ -32,14 +33,14 @@ void solution2()
 	unsigned int sum = 0;
 	unsigned int a = 1;
 	unsigned int b = 1;
-  unsigned int c = a + b;
+	unsigned int c = a + b;
 
-  while (c < 4000000) {
-      sum += c;
-      a = b + c;
-      b = c + a;
-      c = a + b;
-  }
+	while (c < 4000000) {
+		sum += c;
+		a = b + c;
+		b = c + a;
+		c = a + b;
+	}
 
 	printf("Solution 2: %d\n", sum);
 }
