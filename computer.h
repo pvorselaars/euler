@@ -2,7 +2,11 @@
 #define COMPUTER_H
 
 #include <stdio.h>
+#include <stdint.h>
+#include <math.h>
 #include <time.h>
+
+typedef uint64_t u64;
 
 #define compute(solution) {\
     const clock_t start = clock();\

@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "../computer.h"
+#include "computer.h"
 
 /* Multiples of 3 or 5
 
